@@ -90,10 +90,15 @@ nav {
   position: relative;
 }
 
-/*.nav-wrapper ul li a {
- width: 100%;
-  padding: 0.5rem 0;
-}*/
+.nav-wrapper ul li,
+.nav-wrapper ul li a {
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-wrapper ul li:hover,
+.nav-wrapper ul li a:hover {
+  color: hsl(0, 0%, 8%);
+}
 
 .arrow-down,
 .arrow-up {
@@ -203,3 +208,71 @@ footer {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media (min-width: 768px) {
+
+  header {
+    justify-content: start;
+    position: static;
+    height: 30px;
+    padding: 1.3rem 2rem;
+  }
+
+  .mobile-menu,
+  .close-button {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    position: static;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .nav-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-wrapper ul {
+    flex-direction: row;
+    position: relative;
+  }
+
+  .arrow-down,
+  .arrow-up {
+    padding: 0 0.2rem;
+  }
+
+  .nav-wrapper ul ul {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    background: hsl(0, 0%, 100%);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0);
+  }
+
+  .sign-up {
+    flex-direction: row;
+    gap: 0.2rem;
+    padding: 0;
+  }
+
+  .btn-login {
+    width: 100px;
+    padding: 0.6rem;
+  }
+
+  .btn-register {
+    padding: 0.6rem;
+    width: 100px;
+  }
+}
+
