@@ -43,6 +43,7 @@ body {
   font-family: 'Epilogue', sans-serif;
   font-weight: 600;
   color: hsl(0, 0%, 41%);
+  cursor: pointer;
 }
 
 /* Header Styles */
@@ -89,6 +90,11 @@ nav {
   position: relative;
 }
 
+/*.nav-wrapper ul li a {
+ width: 100%;
+  padding: 0.5rem 0;
+}*/
+
 .arrow-down,
 .arrow-up {
   padding: 0 1rem;
@@ -122,12 +128,14 @@ nav {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .btn-login {
   background: none;
   border: none;
+  width: 100%;
+  padding: 1rem 2rem;
 }
 
 .btn-register {
